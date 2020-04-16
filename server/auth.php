@@ -20,9 +20,6 @@ elseif($result==LOGIN_OK) {
     if($user->isAdmin($userName)) {
         setcookie('isAdmin',1,time()+3600,'/');
     }
-    else{
-        setcookie('isAdmin',2,time()+3600,'/');
-    }
     header('Location: ../client/index.php');
 }
 

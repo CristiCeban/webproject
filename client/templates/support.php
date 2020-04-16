@@ -24,8 +24,8 @@
 ?>
 <!-------------------------2 rows--------------------------------->
 
-<div class="container-fluid padding">
-    <div class="row padding">
+<div class="container fluid ">
+    <div class="row">
         <div class="col-md-12 col-lg-6">
             <p class="ready">Ready to contact us?</p>
             <h1 class="started">LET'S GET STARTED!</h1>
@@ -35,12 +35,12 @@
 
 <!-----------------------------Contact--------------------------->
 
-<div class="container-fluid padding">
+<div class="container justify-content-center">
     <form action="../server/mail_support.php" method="post">
 
         <!------1 row----->
 
-        <div class="row padding">
+        <div class="row">
             <div class="col-md-12 col-lg-3">
                 <p>My name is</p>
             </div>
@@ -53,7 +53,7 @@
         </div>
 
         <!------2 row----->
-        <div class="row padding">
+        <div class="row">
             <div class="col-md-12 col-lg-3">
                 <p>My contact info</p>
             </div>
@@ -68,7 +68,7 @@
 
         <!-------3 row------->
 
-        <div class="row padding">
+        <div class="row">
             <div class="col-md-12 col-lg-3">
                 <p>My organization is</p>
             </div>
@@ -85,7 +85,7 @@
         </div>
 
         <!---------4 row---------->
-        <div class="row padding">
+        <div class="row">
             <div class="col-md-12 col-lg-3">
                 <p>Let's talk about</p>
             </div>

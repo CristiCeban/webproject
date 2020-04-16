@@ -5,3 +5,5 @@ define("USER_NOT_FOUND",1);
 define("PASSWORD_WRONG",2);
 define("PASSWORD_NOT_MATCH",3);
 define("NEW_USER_OK",4);
+define("IS_USER",2);
+define("IS_ADMIN",1);

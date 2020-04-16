@@ -19,16 +19,7 @@ if(isLoggedIn())
 </head>
 <body>
 <?php
-    if(isset($alert_msg)){
-        $msg = '';
-        if($alert_msg==USER_NOT_FOUND){
-            $msg = "User with this username doesn't exist";
-        }
-        elseif($alert_msg==PASSWORD_WRONG){
-            $msg = "Wrong password";
-        }
-        alertPHP($msg);
-}
+    alertLogin($alert_msg);
 ?>
 <div class="modal-dialog text-center">
     <div class="col-sm-9 main-section">

@@ -16,9 +16,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.php">Home</a>
                 </li>
+                <?php if(isAdmin()): ?>
                 <li class="nav-item">
                     <a class="nav-link" href="management.php">Management</a>
                 </li>
+                <?php endif ?>
                 <li class="nav-item">
                     <a class="nav-link" href="statistic.php">Statistic</a>
                 </li>
@@ -26,9 +28,12 @@
                     <a class="nav-link" href="support.php">Contact</a>
                 <li class="nav-item">
                     <?php
-                    if (isset($_COOKIE['username'])) :
+                    if (isLoggedIn()) :
                     ?>
-                    <a class="nav-link" href="../server/disc.php">Disconnect</a>
+                    <a class="nav-link" href="my_account.php">My account</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class ="nav-link" href ="../server/disc.php">Disconnect</a>
                     <?php
                     else :
                     ?>
