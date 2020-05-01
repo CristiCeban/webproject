@@ -17,6 +17,7 @@ elseif($result==PASSWORD_WRONG){
 }
 elseif($result==LOGIN_OK) {
     setcookie('username',$userName,time()+3600,'/');
+    setcookie('year',date('Y'),time()+3600,'/');
     if($user->isAdmin($userName)) {
         setcookie('isAdmin',1,time()+3600,'/');
     }
