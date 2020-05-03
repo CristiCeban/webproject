@@ -35,9 +35,8 @@
             <img class="d-block w-100" src="img/statistics_background4.jpg" alt="First slide">
             <div class="carousel-caption">
                 <h1 class="display-2">Statistics</h1>
-                <h3>Complete Website Layout</h3>
-                <button type="button" class="btn btn-outline-light btn-lg">View Demo</button>
-                <button type="button" class="btn btn-primary btn-lg">View Stats</button>
+                <h3>View Entire Statistics</h3>
+                <button type="button" class="btn btn-primary btn-lg" onclick="location.href='statistic.php'">View Stats</button>
             </div>
         </div>
         <div class="carousel-item own-carousel">
@@ -45,12 +44,16 @@
             <div class="carousel-caption">
                 <h1 class="display-2">Management</h1>
                 <h3>Manage the current year</h3>
-                <button type="button" class="btn btn-outline-light btn-lg">View Demo</button>
-                <button type="button" class="btn btn-primary btn-lg">Manage</button>
+                <button type="button" class="btn btn-primary btn-lg" onclick="location.href='management.php'">Manage</button>
             </div>
         </div>
         <div class="carousel-item own-carousel">
             <img class="d-block w-100" src="img/statistics_background3.jpg" alt="Third slide">
+            <div class="carousel-caption">
+                <h1 class="display-2">Contact</h1>
+                <h3>Contact Us Anytime</h3>
+                <button type="button" class="btn btn-primary btn-lg" onclick="location.href='support.php'">View Stats</button>
+            </div>
         </div>
         <div class="carousel-item own-carousel">
             <img class="d-block w-100" src="img/statistics_background.jpg" alt="Third slide">
@@ -83,7 +86,7 @@
             </p>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-3 col-lg3 col-xl-2">
-            <a href="#"><button type="button" class="btn btn-outline-secondary btn-lg">
+            <a href="login.php"><button type="button" class="btn btn-outline-secondary btn-lg">
                 Get Started</button> </a>
         </div>
     </div>
@@ -117,36 +120,18 @@
         <div class="col-xs-12 col-sm-6 col-md-4">
             <img class="icons" src="img/statistics_icon3.png" alt="icons2">
             <h3>Management</h3>
-            <p>Statistics description below</p>
+            <p>Manage all relationships between teachers,modules,groups...</p>
         </div>
         <div class="col-sm-12 col-md-4">
             <img class="icons" src="img/statistics_icon4.png" alt="icons2">
             <h3>Questions</h3>
-            <p>Statistics description below</p>
+            <p>You have Questions? Contact Us</p>
         </div>
     </div>
     <hr class="my-4">
 </div>
 
-<!------------------------------2 Column Section ------------------>
-<div class="container-fluid padding">
-    <div class="row padding">
-        <div class="col-md-12 col-lg-6">
-            <h2>If you want to use this...</h2>
-            <p>Something to write 1asdassssssssssssssssssssssssssssssssssssssssssssssssssss
-                Something to write 1asdassssssssssssssssssssssssssssssssssssssssssssssssssss</p>
-            <p>Something to write 1asdassssssssssssssssssssssssssssssssssssssssssssssssssss</p>
-            Something to write 1asdassssssssssssssssssssssssssssssssssssssssssssssssssss
-            <p>SSomething to write 1asdassssssssssssssssssssssssssssssssssssssssssssssssssss</p>
-            <br>
-            <a href="#"></a>
-        </div>
-        <div class="col-lg-6">
-            <img src="img/statistics_big_data.jpg" class="img-fluid">
-        </div>
-    </div>
-</div>
-<hr class="my-4">
+
 <!-----------------------------------Fixed Background---------------------->
 <figure>
     <div class="fixed-wrap">
@@ -181,7 +166,33 @@
     </div>
     <hr class="my-4">
 </div>
+<!------------------------------2 Column Section ------------------>
+<div class="container-fluid padding">
+    <div class="row padding">
+        <div class="col-md-12 col-lg-6">
+            <h2>If you want to use this...</h2>
+            <p>This site permit to see the full statistics and manage the relationship between teachers,users,module,category,groups.</p>
+            <p>the site is in the development phase, and may have some bugs and some functionality not work properly</p>
+            <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"),
+                to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,
+                and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
 
+            <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+
+            <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+                FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+                WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+
+            </p>
+            <br>
+            <a href="#"></a>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/statistics_big_data.jpg" class="img-fluid">
+        </div>
+    </div>
+</div>
+<hr class="my-4">
 <!-------------------------------------Connect--------------------------------->
 <div class="container-fluid padding">
     <div class="row text-center padding">

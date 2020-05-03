@@ -65,4 +65,50 @@ class dashboard{
         $this->db->bind('teacher_prenom', $nom[1]);
         return $this->db->resultSet();
     }
+    public function getAllModulesByCategory($cid,$teacher,$year){
+        $this->db->query('select distinct * from modules where cid =:cid and eid=
+                            (select eid from enseignants where nom = :teacher_nom and prenom = :teacher_prenom and annee=:year)');
+        $this->db->bind('cid',$cid);
+        $nom = explode(" ",$teacher);
+        $this->db->bind('year',$year);
+        $this->db->bind('teacher_nom',$nom[0]);
+        $this->db->bind('teacher_prenom', $nom[1]);
+        return $this->db->resultSet();
+    }
+
+    public function getAllGroupsByModule($mid,$teacher,$year){
+        $this->db->query('select distinct * from groupes where annee=:year and mid=:mid and gid in (select gid from affectations where eid in(
+                                (select eid from enseignants where nom = :teacher_nom and prenom = :teacher_prenom and annee=:year)))');
+        $nom = explode(" ",$teacher);
+        $this->db->bind('year',$year);
+        $this->db->bind('mid',$mid);
+        $this->db->bind('teacher_nom',$nom[0]);
+        $this->db->bind('teacher_prenom', $nom[1]);
+        return $this->db->resultSet();
+    }
+    public function getAllAffectationsGroupes($gid,$teacher,$year){
+        $this->db->query('select * from affectations where gid=:gid and eid = (select eid from enseignants where nom = :teacher_nom and prenom = :teacher_prenom and annee=:year)');
+        $nom = explode(" ",$teacher);
+        $this->db->bind('year',$year);
+        $this->db->bind('gid',$gid);
+        $this->db->bind('teacher_nom',$nom[0]);
+        $this->db->bind('teacher_prenom', $nom[1]);
+        return $this->db->single();
+    }
+    public function getNbhTeacher($teacher,$year){
+        $nom = explode(" ",$teacher);
+        $this->db->query('select nbh from etypes where etid = (select etid from enseignants where nom = :teacher_nom and prenom = :teacher_prenom and annee=:year) limit 1');
+        $this->db->bind('year',$year);
+        $this->db->bind('teacher_nom',$nom[0]);
+        $this->db->bind('teacher_prenom', $nom[1]);
+        return $this->db->single();
+    }
+    public function getScheduleTeacher($teacher,$year){
+        $this->db->query('select g.nom, m.intitule, a.nbh from groupes g, affectations a, modules m where g.gid = a.gid and g.mid=m.mid and a.eid in (select eid from enseignants where nom = :teacher_nom and prenom = :teacher_prenom and annee=:year)');
+        $nom = explode(" ",$teacher);
+        $this->db->bind('year',$year);
+        $this->db->bind('teacher_nom',$nom[0]);
+        $this->db->bind('teacher_prenom', $nom[1]);
+        return $this->db->resultSet();
+    }
 }

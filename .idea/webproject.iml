@@ -5,5 +5,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="f2ea4398fc" level="application" />
+    <orderEntry type="library" name="loader" level="application" />
+    <orderEntry type="library" name="jqueryui" level="application" />
   </component>
 </module>
