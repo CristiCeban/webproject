@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dd3d2e2-ddd7-4a4e-b87f-343d8a0b0e7b" name="Default Changelist" comment="V 1.2&#10;-added my stats page,need more work on it,to add normal display">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/css/management.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/fetch/fetchUsers.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Manager.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/addToDb.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/addTool.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/assignToDb.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/assignTool.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/deleteTool.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/editToDb.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/editTool.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webproject.iml" afterDir="false" />
+    <list default="true" id="7dd3d2e2-ddd7-4a4e-b87f-343d8a0b0e7b" name="Default Changelist" comment="V 1.31&#10;-Added DB to GIT&#10;-added README + project requirements (description_projet)">
+      <change afterPath="$PROJECT_DIR$/2019_projet5_services.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/description_projet.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/management.php" beforeDir="false" afterPath="$PROJECT_DIR$/client/management.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/statistic.php" beforeDir="false" afterPath="$PROJECT_DIR$/client/statistic.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/templates/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/client/templates/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/templates/management.php" beforeDir="false" afterPath="$PROJECT_DIR$/client/templates/management.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/templates/statistic.php" beforeDir="false" afterPath="$PROJECT_DIR$/client/templates/statistic.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,10 +66,10 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\webproject" />
       <recent name="C:\xampp\htdocs\webproject\lib" />
       <recent name="C:\xampp\htdocs\webproject\client\templates" />
       <recent name="C:\xampp\htdocs\webproject\client" />
-      <recent name="C:\xampp\htdocs\webproject" />
       <recent name="C:\xampp\htdocs\webproject\client\config" />
     </key>
   </component>
@@ -102,7 +102,12 @@
       <workItem from="1588255135109" duration="3799000" />
       <workItem from="1588319751917" duration="294000" />
       <workItem from="1588320091330" duration="31899000" />
-      <workItem from="1588401721364" duration="74098000" />
+      <workItem from="1588401721364" duration="75609000" />
+      <workItem from="1588598898391" duration="56000" />
+      <workItem from="1588599973729" duration="28000" />
+      <workItem from="1588602524029" duration="140000" />
+      <workItem from="1589355300321" duration="232000" />
+      <workItem from="1591556687417" duration="2449000" />
     </task>
     <task id="LOCAL-00001" summary="V 1.0&#10;-added auth &#10;-added different types of users (admin,user)&#10;-some pages are available only with admin's rights.&#10;-can create a user now.&#10;-can send a support letter to server(support),and content of the letter will be stored in file &quot;CURRENT_DATE&quot;.log&#10;-added bootstrap to main page,support page,login page,new user page,&#10;-once user is logged,it remains logged using cookies for 1 hour.&#10;-once the user was registered,he remains logged in system(also using cookies).">
       <created>1586983202148</created>
@@ -125,17 +130,38 @@
       <option name="project" value="LOCAL" />
       <updated>1588321832506</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="V 1.3&#10;-added management page with all crud operations and assigment.&#10;-todo to add stats on module and groups">
+      <created>1588533576951</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1588533576951</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="V 1.0&#10;-added auth &#10;-added different types of users (admin,user)&#10;-some pages are available only with admin's rights.&#10;-can create a user now.&#10;-can send a support letter to server(support),and content of the letter will be stored in file &quot;CURRENT_DATE&quot;.log&#10;-added bootstrap to main page,support page,login page,new user page,&#10;-once user is logged,it remains logged using cookies for 1 hour.&#10;-once the user was registered,he remains logged in system(also using cookies)." />
     <MESSAGE value="V 1.1&#10;-added my space page,others were improved." />
     <MESSAGE value="V 1.2&#10;-added my stats page,need more work on it,to add normal display" />
-    <option name="LAST_COMMIT_MESSAGE" value="V 1.2&#10;-added my stats page,need more work on it,to add normal display" />
+    <MESSAGE value="V 1.3&#10;-added management page with all crud operations and assigment.&#10;-todo to add stats on module and groups" />
+    <MESSAGE value="V 1.31&#10;-Added DB to GIT&#10;-added README + project requirements (description_projet)" />
+    <option name="LAST_COMMIT_MESSAGE" value="V 1.31&#10;-Added DB to GIT&#10;-added README + project requirements (description_projet)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="476" y="3" key="#PHP" timestamp="1586774627299">
@@ -150,10 +176,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="348" y="68" key="#Servers/0.0.1536.824@0.0.1536.824" timestamp="1586773667772" />
-    <state x="447" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588444635952">
+    <state x="447" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588602621158">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="447" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1588444635952" />
+    <state x="447" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1588602621158" />
     <state x="449" y="149" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1587071214366">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -166,18 +192,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="559" y="92" key="#index.html/0.0.1536.824@0.0.1536.824" timestamp="1586774552534" />
-    <state x="349" y="0" key="CommitChangelistDialog2" timestamp="1588530846162">
+    <state x="349" y="0" key="CommitChangelistDialog2" timestamp="1588533576108">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="349" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1588530846162" />
+    <state x="349" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1588533576108" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1587137838872">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="254" height="195" key="DatabaseViewActions_Filter/0.0.1536.824@0.0.1536.824" timestamp="1587137838872" />
-    <state x="497" y="142" key="FileChooserDialogImpl" timestamp="1586774886806">
+    <state x="497" y="142" key="FileChooserDialogImpl" timestamp="1588602661994">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="497" y="142" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586774886806" />
+    <state x="497" y="142" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1588602661994" />
     <state width="1464" height="185" key="GridCell.Tab.0.bottom" timestamp="1588530840518">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -258,10 +284,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="465" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1587071114567" />
-    <state x="578" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588321974726">
+    <state x="578" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588533580433">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="578" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1588321974726" />
+    <state x="578" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1588533580433" />
     <state x="538" y="220" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1588453039156">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
